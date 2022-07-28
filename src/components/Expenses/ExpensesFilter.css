@@ -16,6 +16,11 @@
     margin-bottom: 0.5rem;
   }
   
+  .expenses-filter__totalPrice {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
   .expenses-filter select {
     font: inherit;
     padding: 0.5rem 3rem;

@@ -16,9 +16,15 @@ const Expenses = (props) => {
     return expense.date.getFullYear().toString() === filteredYear;
   });
 
+  let totalExpense = 0;
+  filteredExpenses.forEach((item) => {
+    return (totalExpense += item.amount);
+  });
+
   return (
     <Card className="expenses">
       <ExpensesFilter
+        items={totalExpense}
         selected={filteredYear}
         onChangeFilter={filterChangeHandler}
       />
